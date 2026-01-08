@@ -134,8 +134,15 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://localhost:5173",
     "http://127.0.0.1:3000",
+    "https://crm-frontend-s3t6.onrender.com",
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://crm-api-aoiv.onrender.com",
+    "https://crm-frontend-s3t6.onrender.com",
+]
+
+CORS_ALLOW_CREDENTIALS = True
 
 REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
